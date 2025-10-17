@@ -1,55 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Capitán América</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/3Z4Bbzr.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 50, 0.7);
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #00bfff;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    table, th, td {
+      border: 2px solid #00bfff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 5px 0;
+      padding: 8px;
+      border-left: 5px solid #ff4757;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      table, th, td {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
-<body> 
-<hi>Capitan America</hi> 
-<p>Las cualidades del Capitán América se dividen en habilidades físicas y rasgos de personalidad. Físicamente,<br>
-    gracias al suero del supersoldado, posee superfuerza, agilidad, velocidad, resistencia y un factor curativo acelerado. En cuanto a su personalidad,<br>
-    es un líder nato, valiente, leal, honesto, justo y tiene una gran capacidad estratégica y de combate. </p> 
-<br>
-<p>es un superhéroe creado para servir como propaganda estadounidense durante la Segunda Guerra Mundial. Rechazado por el ejército por ser débil,<br>
-    se le ofrece participar en un experimento secreto para crear un supersoldado; tras el experimento, su cuerpo es transformado en la cima de la perfección física humana,<br>
-    convirtiéndose en el Capitán América. Después de la guerra, 
-    queda congelado y es despertado en el futuro para unirse a los Vengadores, convirtiéndose en su líder. </p> 
-<img src="capitan.jpg" width="100px" height="100px"> 
-<img src="america.jpeg" width="100px" height="100px">  
-<br>
-<table border="2">
-    <tr>
-        <td>Carascteristicas</td><td>Habilidades</td>
-    </tr>
-    <tr>
-        <td>Super Soldado</td><td>Fuerza</td>
-    </tr>
-    <tr>
-        <td>Utiliza un escudo indestructible hecho de Vibranium</td><td>Durabilidad y aguante</td>
-    </tr>
-    <tr>
-        <td>Es un combatiente extremadamente hábil</td><td>Su cuerpo se regenera más rápido de lo normal. </td>
-    </tr>
-    <tr>
-        <td>Inteligencia táctica</td><td>velocidad y resistencia</td>
-    </tr>
-</table>
 
+<body>
+  <div class="container">
+    <h1>Capitán América</h1>
 
+    <p>Las cualidades del Capitán América se dividen en habilidades físicas y rasgos de personalidad. Físicamente,
+      gracias al suero del supersoldado, posee superfuerza, agilidad, velocidad, resistencia y un factor curativo
+      acelerado. En cuanto a su personalidad, es un líder nato, valiente, leal, honesto, justo y tiene una gran capacidad
+      estratégica y de combate.</p>
 
+    <p>Es un superhéroe creado para servir como propaganda estadounidense durante la Segunda Guerra Mundial. Rechazado
+      por el ejército por ser débil, se le ofrece participar en un experimento secreto para crear un supersoldado;
+      tras el experimento, su cuerpo es transformado en la cima de la perfección física humana, convirtiéndose en el
+      Capitán América. Después de la guerra, queda congelado y es despertado en el futuro para unirse a los Vengadores,
+      convirtiéndose en su líder.</p>
 
-<ul>
-    <li>Nombre real: Steven "Steve" Rogers </li>
-    <li>Creación: Creado por Joe Simon y Jack Kirby</li>
-    <li>Origen: Un hombre débil que se convirtió en un supersoldado mediante un experimento militar durante la Segunda Guerra Mundial 
-</li>
-    <li>Conocido como el "Cap" y "Capi" </li>
-    <li>Miembro fundador de los Vengadores </li>
-</ul>
+    <div>
+      <img src="capitan.jpg" width="100px" height="100px" alt="Capitán América">
+      <img src="america.jpeg" width="100px" height="100px" alt="Escudo de Capitán América">
+    </div>
 
+    <table>
+      <tr>
+        <th>Características</th>
+        <th>Habilidades</th>
+      </tr>
+      <tr>
+        <td>Super Soldado</td>
+        <td>Fuerza</td>
+      </tr>
+      <tr>
+        <td>Utiliza un escudo indestructible hecho de Vibranium</td>
+        <td>Durabilidad y aguante</td>
+      </tr>
+      <tr>
+        <td>Es un combatiente extremadamente hábil</td>
+        <td>Su cuerpo se regenera más rápido de lo normal.</td>
+      </tr>
+      <tr>
+        <td>Inteligencia táctica</td>
+        <td>Velocidad y resistencia</td>
+      </tr>
+    </table>
 
-
-
+    <ul>
+      <li>Nombre real: Steven "Steve" Rogers</li>
+      <li>Creación: Creado por Joe Simon y Jack Kirby</li>
+      <li>Origen: Un hombre débil que se convirtió en un supersoldado mediante un experimento militar durante la Segunda Guerra Mundial</li>
+      <li>Conocido como el "Cap" y "Capi"</li>
+      <li>Miembro fundador de los Vengadores</li>
+    </ul>
+  </div>
+<a href="historia1.html">HISTORIA3</a> 
 </body>
 </html>
