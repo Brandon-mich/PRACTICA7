@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iron Man</title>
+  <style>
+    /* FONDO ANIMADO */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background: linear-gradient(-45deg, #0a0a0a, #1a0000, #300000, #1a1a1a);
+      background-size: 400% 400%;
+      animation: fondoMovimiento 18s ease infinite;
+    }
+
+    @keyframes fondoMovimiento {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ENCABEZADO */
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      text-shadow: 0 0 25px #FF0000;
+      font-size: 3.5em;
+      margin-top: 30px;
+      animation: aparecer 1.5s ease-out;
+      letter-spacing: 2px;
+    }
+
+    p {
+      width: 80%;
+      margin: 20px auto;
+      line-height: 1.6;
+      font-size: 1.2em;
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    /* IMÁGENES */
+    img {
+      margin: 20px;
+      border: 4px solid #FF4500;
+      box-shadow: 0 0 25px #FFD700aa;
+      transition: transform 0.6s, box-shadow 0.6s;
+      animation: fadeInImg 2s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px #ff0000cc;
+    }
+
+    /* TABLA */
+    table {
+      width: 85%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 25px #FF4500;
+      animation: fadeInUp 2.5s ease forwards;
+      backdrop-filter: blur(4px);
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid #FFD700;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    th {
+      background-color: #ff000080;
+      color: #fff;
+    }
+
+    td {
+      color: #ddd;
+    }
+
+    /* SUBTÍTULO */
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      color: #FF5733;
+      text-shadow: 0 0 10px #FFD700;
+      animation: aparecer 1.5s ease-out;
+      font-size: 2em;
+    }
+
+    /* LISTA */
+    ul {
+      width: 60%;
+      margin: auto;
+      font-size: 1.1em;
+      animation: fadeInUp 2s ease forwards;
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 15px 0;
+      padding: 10px;
+      background: rgba(255, 215, 0, 0.05);
+      border-left: 4px solid #FFD700;
+      transition: all 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateX(15px);
+      color: #FFD700;
+      background-color: rgba(255, 0, 0, 0.2);
+      border-left-color: #FF0000;
+    }
+
+    /* HIPERVÍNCULO */
+    .enlace {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 25px;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      transition: all 0.4s ease;
+      background-color: rgba(255, 215, 0, 0.1);
+      box-shadow: 0 0 15px #FFD70066;
+      font-weight: bold;
+    }
+
+    .enlace:hover {
+      background-color: #FFD700;
+      color: #000;
+      box-shadow: 0 0 30px #FFD700;
+      transform: scale(1.1);
+    }
+
+    /* ANIMACIONES */
+    @keyframes aparecer {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInImg {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Iron Man</h1>
+
+  <p>Iron Man es un superhéroe del universo Marvel, cuyo nombre real es Tony Stark. Es un genio multimillonario, inventor y propietario de Industrias Stark, una compañía de tecnología avanzada. Después de sufrir una grave lesión en el pecho durante un secuestro, construyó una armadura para salvar su vida y escapar. Esta experiencia lo transformó y decidió usar su tecnología para proteger al mundo.</p>
+
+  <p>Tony Stark no tiene superpoderes en el sentido tradicional, pero su inteligencia, habilidades como ingeniero y la potencia de su armadura lo convierten en uno de los héroes más poderosos. Con el tiempo, se convierte en un miembro clave de los Vengadores y tiene un papel central en muchas de las historias del Universo Cinematográfico de Marvel (MCU).</p>
+
+  <div style="text-align: center;">
+    <img src="https://images.hdqwalls.com/wallpapers/2020-iron-man-4k-infinity-gauntlet-6u.jpg" width="500" height="300" alt="Iron Man 1" />
+    <img src="https://images2.alphacoders.com/971/thumb-1920-971653.jpg" width="500" height="300" alt="Iron Man 2" />
+  </div>
+
+  <table>
+    <tr>
+      <th>Característica</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td>Nombre real</td>
+      <td>Tony Stark</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Empresario e inventor</td>
+    </tr>
+    <tr>
+      <td>Armadura</td>
+      <td>Alta tecnología con armas, vuelo y sistemas de defensa</td>
+    </tr>
+    <tr>
+      <td>Afiliación</td>
+      <td>Los Vengadores</td>
+    </tr>
+  </table>
+
+  <h2>Películas de Iron Man</h2>
+  <ul>
+    <li>Iron Man (2008)</li>
+    <li>Iron Man 2 (2010)</li>
+    <li>Iron Man 3 (2013)</li>
+    <li>The Avengers (2012)</li>
+    <li>Avengers: Age of Ultron (2015)</li>
+    <li>Captain America: Civil War (2016)</li>
+    <li>Avengers: Infinity War (2018)</li>
+    <li>Avengers: Endgame (2019)</li>
+  </ul>
+
+  <!-- HIPERVÍNCULO CON ESTILO -->
+  <a class="enlace" href="practica7.html">Ir a página: Historia 2</a>
+
+</body>
+</html>
